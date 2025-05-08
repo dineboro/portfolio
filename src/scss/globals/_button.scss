@@ -1,0 +1,29 @@
+button {
+    display: inline-block;
+    margin:auto;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-small) var(--spacing-large);
+    border: var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50%;
+    
+
+    &:hover {
+        background-color: var(--button-primary-text);
+    }
+
+    &:disabled {
+      background-color: var var (--primary-color, 20%);
+      cursor: not-allowed;
+    }
+    
+}
+.about__button{
+  text-align: center;
+  padding: 10px;
+
+}

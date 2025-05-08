@@ -1,0 +1,163 @@
+
+@mixin button-styles {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--gradient1);
+  }
+}
+.bio-card {
+  background: var(--main-bg);
+  border: none;
+  padding: 3rem;
+  margin: 2rem auto;
+  border-radius: .5rem;
+  max-width: 600px;
+  box-shadow: 0 10px 10px var(--border-color);
+  transition: transform 0.3s ease;
+  &:hover{
+    transform: translateY(-5px);
+  }
+
+  .profile-picture {    
+    width: 200px;    
+    height: 200px;    
+    border-radius: 50%;    
+    margin: 0 auto 2rem;    
+    display: block;    
+    object-fit: cover;    
+    border: 4px solid var(--primary-color);    
+    box-shadow: 0 4px 25px var(--border-color);  
+  }
+
+  h2 {
+    color: var(primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .bio {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+    position: relative;
+    color: var(--text-dark);
+    margin: 1em 0;
+    button {
+      @include button-styles;
+      font-weight: 600px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      padding: 0.8rem 2rem;
+      margin-top: 1em;
+      border-radius: 25px;
+      background-color: var(--primary-color);
+      &:hover{
+        background-color: var(--gradient1);
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px var(--border-color);
+      }
+      
+    }
+  }
+  .talent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+    &__skills {
+      background: rgba(var(--primary-color-rgb), 0.05);      
+		  padding: 1.5rem;      
+		  border-radius: 12px;      
+		  transition: transform 0.3s ease;  
+      list-style: none;
+      padding: 0;
+      &:hover {        
+        transform: translateY(-3px); 
+      }
+
+      li {
+        padding: 0.8rem 1rem;        
+		    margin: 0.5rem 0;        
+        background: white;        
+        border-radius: 8px;        
+        font-weight: 500;        
+        color: var(--primary-color);        
+        display: flex;        
+        align-items: center;        
+        gap: 0.8rem;        
+        box-shadow: 0 2px 8px var(--border-color);        
+        &::before {          
+        content: '✓';          
+        color: var(--gradient1);          
+        font-weight: bold;
+        }
+      }
+    }
+    &__tools{
+      background: rgba(var(--primary-color-rgb), 0.05);      
+		  padding: 1.5rem;      
+		  border-radius: 12px;      
+		  transition: transform 0.3s ease;  
+      list-style: none;
+      padding: 0;
+      &:hover {        
+        transform: translateY(-3px); 
+      }
+
+      li {
+        padding: 0.8rem 1rem;        
+		    margin: 0.5rem 0;        
+        background: white;        
+        border-radius: 8px;        
+        font-weight: 500;        
+        color: var(--primary-color);        
+        display: flex;        
+        align-items: center;        
+        gap: 0.8rem;        
+        box-shadow: 0 2px 8px var(--border-color);        
+        &::before {          
+        content: '✓';          
+        color: var(--gradient1);          
+        font-weight: bold;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {    
+    padding: 2rem;    
+    margin: 1rem;    
+    .profile-picture {      
+      width: 150px;      
+      height: 150px;    
+    }    
+    .talent {      
+      grid-template-columns: 1fr;      
+      gap: 1.5rem;    
+    } 
+  } 
+  
+}
+
+.home__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: linear-gradient(to botttom right, var(--gradient1), var(--gradient2));
+  animation: fadeIn 3s ease-in;
+  @keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+  }
+}
+
+
