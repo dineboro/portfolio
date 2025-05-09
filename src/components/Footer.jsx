@@ -15,7 +15,7 @@ function Footer(){
                         <a href="" className="footer__links-link">Contact</a>
                     </li>
                     <li className="footer__links-item">
-                        <a href="" className="footer__links-link">Github</a>
+                        <a href="https://github.com/dineboro" className="footer__links-link">Github</a>
                     </li>
                 </ul>
             </div>
