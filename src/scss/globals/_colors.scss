@@ -24,4 +24,28 @@
 --gradient2: hsl(0, 44%, 65%);
 --gradient3: hsl(180, 100%, 42%); 
 
+--light-background: hsl(0, 0%, 100%);
+--light-text: hsl(210, 11%, 15%); // A common dark grey for text
+--light-primary: hsl(19, 100%, 50%); // Bootstrap primary blue
+--light-secondary: hsl(208, 7%, 46%); // Bootstrap secondary grey
+--light-accent: hsl(188, 78%, 41%); // Bootstrap info cyan
+--light-card-bg: hsl(210, 17%, 98%);
+--light-card-border: hsl(210, 14%, 89%);
+--light-nav-bg: hsl(210, 16%, 93%);
+--light-footer-bg: hsl(210, 10%, 23%);
+--light-footer-text: hsl(210, 17%, 98%);
+
+// --- Dark Theme Colors (Sass Variables for definition) ---
+
+--dark-background: #121212; // A very dark grey, common for dark modes
+--dark-text: #e0e0e0;    // Light grey for text
+--dark-primary: #58a6ff; // A lighter, accessible blue for dark mode
+--dark-secondary: #8b949e;
+--dark-accent: #39cccc;  // A lighter cyan
+--dark-card-bg: #1e1e1e;  // Darker card background
+--dark-card-border: #333333;
+--dark-nav-bg: #2c2c2c;
+--dark-footer-bg: #1e1e1e;
+--dark-footer-text: #adb5bd;
+
 }

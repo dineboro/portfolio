@@ -1,5 +1,6 @@
 import React from "react";
 import {NavLink} from 'react-router-dom';
+import ThemeToggle from "./ThemeToggle";
 //import Container from "react-bootstrap/Container";
 //import Nav from "react-bootstrap/Nav";
 //import Navbar from "react-bootstrap/Navbar"
@@ -14,6 +15,7 @@ function NavigationBar() {
                 <NavLink to="/worksection" className="navbar__links-link">Work</NavLink>
                 <NavLink to="/contactsection" className="navbar__links-link">Contact</NavLink>
             </div>
+            <ThemeToggle/>
         </nav>
         
     )
